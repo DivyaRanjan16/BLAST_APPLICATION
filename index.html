@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        PROTEIN BLAST
+    </title>
+    </head>
+    <body>
+        <H2>Submit MAX OF 5 Protein Sequences for BLAST</H2>
+        <form method="post" enctype="multipart/form-data">
+            Email: <input type="email" name="email" required> <br> <br>
+            Paste Sequences:<br>
+            <textarea name="fasta" rows="10" cols="60"></textarea><br><br>
+            or Upload FASTA file (Containing a maximum of 5 sequences):
+            <input type="file" name="fasta_file"><br><br>
+            <button type="submit"> BLAST</button>
+        </form>
+        <p id="status" style="font-weight: bold; color: green;"></p>
+    </body>
+</html>
